@@ -1,6 +1,12 @@
-.body-container{
-    background-color: #EFF3F5;
-    .all-assets{
-        padding: 20px 0;
-    }
+@import "./breakPoints";
+@import "./colors";
+
+.body-container {
+  background-color: #eff3f5;
+  .all-assets {
+    padding: 20px 0;
+  }
+  .dashboard-table {
+    padding: 0 0 20px;
+  }
 }

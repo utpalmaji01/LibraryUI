@@ -1,0 +1,36 @@
+@import "./breakPoints";
+@import "./colors";
+
+.dashboard-table-container {
+  width: 90%;
+  margin: 0 auto;
+  .table {
+    box-sizing: border-box;
+    border: 1px solid $color-lightgray;
+    .table-head {
+      background-color: $color-lightgray;
+    }
+    .table-body {
+      background-color: $color-white;
+      .table-body-row {
+        .table-body-cell {
+          .status {
+            width: min-content;
+            padding: 3px;
+            border-radius: 3px;
+            color: $color-white;
+          }
+          .status.status-approved {
+            background-color: lightseagreen;
+          }
+          .status.status-pending {
+            background-color: orangered;
+          }
+          .status.status-rejected {
+            background-color: red;
+          }
+        }
+      }
+    }
+  }
+}

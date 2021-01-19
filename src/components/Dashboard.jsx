@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import Header from "./Header.jsx";
 import Loader from "./Loading.jsx";
 import ErrorBoundary from "./ErrorBoundary.jsx";
+import "../style/dashboard.scss";
 
 const Body = lazy(() => {
   return new Promise((resolve) => {

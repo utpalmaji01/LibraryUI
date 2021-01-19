@@ -15,12 +15,14 @@ import {
 import logo from "../assets/image/icon.png";
 import vsCodeLogo from "../assets/image/vsCodeLogo.png";
 import "../style/header.scss";
+
 const Header = () => {
   const [value, setValue] = useState("DASHBOARD");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
   return (
     <div className="header-container">
       <div className="primary-header">

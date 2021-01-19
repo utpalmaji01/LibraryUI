@@ -14,6 +14,11 @@
           margin: 0 8px;
           color: #6c4ef5;
         }
+        .tab-details {
+          .details-header {
+            text-transform: capitalize;
+          }
+        }
       }
     }
   }

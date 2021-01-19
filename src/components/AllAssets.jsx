@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tab, Tabs } from "@material-ui/core";
+import { Tab, Tabs, Typography } from "@material-ui/core";
 import { PeopleOutlined as PeopleOutlinedIcon } from "@material-ui/icons";
 import "../style/allAssets.scss";
 
@@ -21,7 +21,64 @@ const AllAssets = () => {
         <Tab
           disabled
           value="NEW USER"
-          label={<div className="tab-details">utpal</div>}
+          label={
+            <div className="tab-details">
+              <Typography variant="body2" className="details-header">
+                New User
+              </Typography>
+              <Typography variant="body1" className="details-description">
+                65650
+              </Typography>
+            </div>
+          }
+          icon={<PeopleOutlinedIcon fontSize="small" className="tab-icon" />}
+          className="assets-tab"
+        />
+        <Tab
+          disabled
+          value="NEW FEEDBACK"
+          label={
+            <div className="tab-details">
+              <Typography variant="body2" className="details-header">
+                New Feedback
+              </Typography>
+              <Typography variant="body1" className="details-description">
+                32604
+              </Typography>
+            </div>
+          }
+          icon={<PeopleOutlinedIcon fontSize="small" className="tab-icon" />}
+          className="assets-tab"
+        />
+        <Tab
+          disabled
+          value="EMPLOYEES"
+          label={
+            <div className="tab-details">
+              <Typography variant="body2" className="details-header">
+                Employees
+              </Typography>
+              <Typography variant="body1" className="details-description">
+                17583
+              </Typography>
+            </div>
+          }
+          icon={<PeopleOutlinedIcon fontSize="small" className="tab-icon" />}
+          className="assets-tab"
+        />
+        <Tab
+          disabled
+          value="TOTAL SALES"
+          label={
+            <div className="tab-details">
+              <Typography variant="body2" className="details-header">
+                Total Sales
+              </Typography>
+              <Typography variant="body1" className="details-description">
+                61119
+              </Typography>
+            </div>
+          }
           icon={<PeopleOutlinedIcon fontSize="small" className="tab-icon" />}
           className="assets-tab"
         />
