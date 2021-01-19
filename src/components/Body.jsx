@@ -1,6 +1,7 @@
 import React from "react";
 import AllAssets from "./AllAssets.jsx";
 import DashboardTable from "./DashboardTable.jsx";
+import ManageTickets from "./ManageTickets.jsx";
 
 import "../style/body.scss";
 
@@ -12,6 +13,9 @@ const Body = () => {
       </div>
       <div className="dashboard-table">
         <DashboardTable />
+      </div>
+      <div className="manage-ticket">
+        <ManageTickets />
       </div>
     </div>
   );
