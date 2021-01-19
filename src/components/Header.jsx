@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Tab,
   Tabs,
@@ -16,7 +16,7 @@ import logo from "../assets/image/icon.png";
 import vsCodeLogo from "../assets/image/vsCodeLogo.png";
 import "../style/header.scss";
 const Header = () => {
-  const [value, setValue] = React.useState("DASHBOARD");
+  const [value, setValue] = useState("DASHBOARD");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
