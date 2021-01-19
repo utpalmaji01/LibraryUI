@@ -1,0 +1,78 @@
+@import "./breakPoints";
+@import "./colors";
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  .primary-header {
+    display: flex;
+    justify-content: space-between;
+    .primary-header-one {
+      display: flex;
+      align-items: center;
+      .logo-pic {
+        height: 20px;
+        width: 20px;
+        margin: 0 10px 0 0;
+      }
+    }
+    .primary-header-two {
+      display: flex;
+      align-items: center;
+      .search {
+        padding: 2px 10px;
+        background-color: #f1f1f1;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        .search-bar {
+          padding: 0 15px;
+          input {
+            padding: 5px 0;
+          }
+        }
+      }
+      .profile-button {
+        .prpfile-pic {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .secondary-header {
+    margin: 10px 0 25px;
+    .header-tabs {
+      .header-tab {
+        width: max-content;
+        min-height: 48px;
+        color: $color-black;
+        background-color: #f1f1f1;
+        span {
+          display: flex;
+          flex-direction: row;
+          .tab-icon {
+            margin: 0 8px;
+            color: #6c4ef5;
+          }
+        }
+      }
+      .header-tab.Mui-selected {
+        color: $color-white;
+        background-color: #6c4ef5;
+        span {
+          .tab-icon {
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.PrivateTabIndicator-colorSecondary-3 {
+  background-color: #6c4ef5 !important;
+}

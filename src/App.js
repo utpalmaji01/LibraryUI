@@ -1,10 +1,15 @@
+import React, { Component } from "react";
+import Routes from "./Routes.js";
+import { BrowserRouter as Router } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <p>welcome to library ui</p>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Routes />
+      </Router>
+    );
+  }
 }
 
 export default App;
