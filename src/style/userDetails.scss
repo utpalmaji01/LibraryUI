@@ -1,0 +1,133 @@
+@import "./breakPoints";
+@import "./colors";
+
+.user-details-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  .user {
+    background-color: #ffffff;
+    padding: 20px;
+    width: calc((100%-40px) / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid $color-lightgray;
+    .user-image {
+      .user-pic {
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+        padding: 5px;
+        background-color: $color-lightgray;
+        border-radius: 50%;
+      }
+    }
+    .user-name {
+    }
+    .user-post {
+      margin: 0 0 15px;
+    }
+    .user-description {
+      text-align: center;
+      margin: 0 0 20px;
+    }
+    .follow-button {
+    }
+    .user-divider {
+      margin: 20px 0;
+    }
+    .user-details {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      .user-posts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .user-followers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .user-likes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  .line-chart-1 {
+    background-color: $color-white;
+    // padding: 10px;
+    width: calc((100%-40px) / 3);
+    margin: 0 20px;
+    box-sizing: border-box;
+    border: 1px solid $color-lightgray;
+    .line-chart-1-container {
+      padding: 25px 15px;
+      .top-products {
+        .top-products-title {
+        }
+      }
+      .line-chart-1-divider {
+        margin: 15px 0;
+      }
+    }
+    canvas {
+      width: 100% !important;
+    }
+  }
+  .line-chart-2 {
+    padding: 10px;
+    width: calc((100%-40px) / 3);
+    box-sizing: border-box;
+    background-color: $color-white;
+    border: 1px solid $color-lightgray;
+    display: flex;
+    align-items: center;
+    .line-chart-2-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .line-chart-2-header {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        .header-total-sales {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .header-open-campaign {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      canvas {
+        width: 100% !important;
+        margin: 40px 0;
+      }
+      .line-chart-2-footer {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        .footer-online-sales {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .footer-store-sales {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

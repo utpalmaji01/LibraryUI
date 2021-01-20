@@ -7,7 +7,7 @@ class ManageTickets extends Component {
     this.state = {
       tickets: [
         {
-          id: 23047,
+          id: "23047",
           name: "James",
           title: "Ipsum dolor sit amet consectetur adipisicing.",
           description:
@@ -16,7 +16,7 @@ class ManageTickets extends Component {
           dueIn: " 2 Days",
         },
         {
-          id: 23135,
+          id: "23135",
           name: "Stella",
           title: "Ipsum dolor sit amet consectetur adipisicing.",
           description:
@@ -25,7 +25,7 @@ class ManageTickets extends Component {
           dueIn: " 2 Days",
         },
         {
-          id: 23246,
+          id: "23246",
           name: "John Doe",
           title: "Ipsum dolor sit amet consectetur adipisicing.",
           description:
@@ -49,8 +49,8 @@ class ManageTickets extends Component {
         </Typography>
         <div className="all-tickets">
           {this.state.tickets.map((ticket, index) => (
-            <>
-              <div key={ticket.id} className="each-ticket">
+            <div key={ticket.id} className="each-ticket">
+              <div className="each-ticket-container">
                 <div className="ticket-member-pic"></div>
                 <div className="ticket-details">
                   <div className="ticket-header">
@@ -90,7 +90,7 @@ class ManageTickets extends Component {
               {this.ticketLength() === index + 1 ? null : (
                 <Divider className="ticket-divider" />
               )}
-            </>
+            </div>
           ))}
         </div>
       </div>

@@ -5,52 +5,55 @@
   width: 90%;
   margin: 0 auto;
   padding: 25px 15px;
-  box-sizing: border-box;
   background-color: $color-white;
+  box-sizing: border-box;
   border: 1px solid $color-lightgray;
   .manage-tickets-header {
     margin: 0 0 10px;
   }
   .all-tickets {
     .each-ticket {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      .ticket-member-pic {
-        width: 40px;
-        height: 40px;
-        background-color: lime;
-        border-radius: 50%;
-      }
-      .ticket-details {
-        width: 80%;
-        margin: 0 0 0 20px;
-        .ticket-header {
-          display: flex;
-          .ticket-member-name {
-            padding: 0 5px 0 0;
+      .each-ticket-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .ticket-member-pic {
+          width: 40px;
+          height: 40px;
+          background-color: lime;
+          border-radius: 50%;
+        }
+        .ticket-details {
+          width: 80%;
+          margin: 0 0 0 20px;
+          .ticket-header {
+            display: flex;
+            .ticket-member-name {
+              padding: 0 5px 0 0;
+            }
+            .ticket-member-id {
+              padding: 0 5px;
+            }
+            .ticket-titlle {
+              padding: 0 5px;
+            }
           }
-          .ticket-member-id {
-            padding: 0 5px;
+          .ticket-description {
+            margin: 0 0 10px 0;
           }
-          .ticket-titlle {
-            padding: 0 5px;
+          .ticket-action-dates {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
           }
         }
-        .ticket-description {
-          margin: 0 0 10px 0;
-        }
-        .ticket-action-dates {
-          width: 50%;
-          display: flex;
-          justify-content: space-between;
-        }
-      }
-      .ticket-action-button {
-        width: 10%;
-        .action-button {
-          float: right;
-          text-transform: none;
+        .ticket-action-button {
+          width: 10%;
+          .action-button {
+            float: right;
+            text-transform: none;
+          }
         }
       }
     }
