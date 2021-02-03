@@ -51,7 +51,7 @@ const Header = () => {
       <div className="secondary-header">
         <Tabs
           value={value}
-          variant="fullWidth"
+          variant={window.screen.availWidth> 1080 ? "fullWidth" : "scrollable"}
           onChange={handleChange}
           className="header-tabs"
         >

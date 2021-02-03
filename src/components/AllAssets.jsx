@@ -13,7 +13,7 @@ const AllAssets = () => {
   return (
     <div className="all-assets-container">
       <Tabs
-        variant="fullWidth"
+        variant={window.screen.availWidth> 500 ? "fullWidth" : "scrollable"}
         value={value}
         onChange={handleChange}
         className="assets-tabs"

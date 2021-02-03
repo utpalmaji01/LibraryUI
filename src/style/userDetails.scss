@@ -5,7 +5,10 @@
   width: 90%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  @media screen and (max-width: $break-medium) {
+    flex-direction: column;
+    align-items: center;
+  }
   .user {
     background-color: #ffffff;
     padding: 20px;
@@ -16,6 +19,13 @@
     justify-content: center;
     box-sizing: border-box;
     border: 1px solid $color-lightgray;
+    @media screen and (max-width: $break-medium) {
+      width: 70%;
+    }
+    @media screen and (max-width: $break-xsmall) {
+      width: 100%;
+    }
+    
     .user-image {
       .user-pic {
         height: 40px;
@@ -68,6 +78,13 @@
     margin: 0 20px;
     box-sizing: border-box;
     border: 1px solid $color-lightgray;
+    @media screen and (max-width: $break-medium) {
+      width: 70%;
+      margin: 20px 0;
+    }
+    @media screen and (max-width: $break-xsmall) {
+      width: 100%;
+    }
     .line-chart-1-container {
       padding: 25px 15px;
       .top-products {
@@ -90,6 +107,12 @@
     border: 1px solid $color-lightgray;
     display: flex;
     align-items: center;
+    @media screen and (max-width: $break-medium) {
+      width: 70%;
+    }
+    @media screen and (max-width: $break-xsmall) {
+      width: 100%;
+    }
     .line-chart-2-container {
       display: flex;
       flex-direction: column;

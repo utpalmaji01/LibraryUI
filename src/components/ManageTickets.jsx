@@ -1,5 +1,6 @@
 import { Divider, Typography, Button } from "@material-ui/core";
 import React, { Component } from "react";
+import vsCodeLogo from "../assets/image/vsCodeLogo.png";
 import "../style/manageTickets.scss";
 class ManageTickets extends Component {
   constructor(props) {
@@ -51,7 +52,9 @@ class ManageTickets extends Component {
           {this.state.tickets.map((ticket, index) => (
             <div key={ticket.id} className="each-ticket">
               <div className="each-ticket-container">
-                <div className="ticket-member-pic"></div>
+                <div className="ticket-member-pic">
+                  <img src={vsCodeLogo} alt="ticket-member" className="ticket-member-image"/>
+                </div>
                 <div className="ticket-details">
                   <div className="ticket-header">
                     <Typography variant="h6" className="ticket-member-name">
@@ -98,4 +101,4 @@ class ManageTickets extends Component {
   }
 }
 
-export default ManageTickets;
+export default ManageTickets; 

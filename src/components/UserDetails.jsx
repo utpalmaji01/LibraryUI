@@ -32,12 +32,14 @@ class UserDetails extends Component {
             data: [0, 75, 12, 50, 100, 70],
             backgroundColor: "#fff",
             borderColor: "rgba(63, 191, 63, 0.95)",
+            pointBackgroundColor: "rgba(63, 191, 63, 0.95)"
           },
           {
             label: "Random Data 2",
             data: [50, 75, 30, 35, 70, 80],
             backgroundColor: "#fff",
             borderColor: "rgba(191, 63, 63, 0.95)",
+            pointBackgroundColor: "rgba(191, 63, 63, 0.95)"
           },
         ],
       },

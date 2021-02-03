@@ -1,0 +1,75 @@
+@import "./breakPoints";
+@import "./colors";
+
+.current-chart-and-updates-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  @media screen and (max-width: $break-medium) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bar-chart {
+    width: calc((100%-20px) / 2);
+    background-color: $color-white;
+    box-sizing: border-box;
+    border: 1px solid $color-lightgray;
+    @media screen and (max-width: $break-medium) {
+      width: 100%;
+    }
+    .chart-header {
+      padding: 20px;
+    }
+    .chart {
+      padding: 0 40px;
+      canvas {
+        width: 100% !important;
+      }
+    }
+    .chart-divider {
+      margin: 20px 0;
+    }
+    .chart-footer {
+      padding: 0 20px 20px;
+      .chart-footer-contant {
+        display: flex;
+        align-items: flex-end;
+        .footer-type {
+          padding: 0 0 5px 0;
+        }
+      }
+    }
+  }
+  .all-updates {
+    margin: 0 0 0 20px;
+    width: calc((100%-20px) / 2);
+    background-color: $color-white;
+    box-sizing: border-box;
+    border: 1px solid $color-lightgray;
+    @media screen and (max-width: $break-medium) {
+      width: 100%;
+      margin: 0;
+    }
+    .all-updates-container {
+        .update-header{
+            padding:  24px 24px 0 24px;
+        }
+      .updates {
+        .each-updates {
+          //   .step-label {
+          //   }
+          .step-contant {
+            .remainder {
+              display: flex;
+              align-items: center;
+              .remainder-icon {
+                font-size: 13px;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
